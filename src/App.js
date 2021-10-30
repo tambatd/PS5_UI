@@ -1,25 +1,7 @@
-import logo from './logo.svg';
-import './App.css';
-
+import "./App.css";
+import Ps5 from "./components/ps5.js";
 function App() {
-  return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
-  );
+  return <Ps5></Ps5>;
 }
 
 export default App;
