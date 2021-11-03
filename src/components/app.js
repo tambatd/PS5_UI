@@ -1,5 +1,7 @@
 import card from "../assets/console_UI/Card.png";
 import styled from "styled-components";
+import ps4Image from "../assets/apps/appType/ps4.png";
+import ps5Image from "../assets/apps/appType/ps5.png";
 
 const PlayStationApp = (props) => {
   const AppBG = styled.div`
@@ -37,10 +39,42 @@ const PlayStationApp = (props) => {
           `}
   `;
 
+  const PSAppInfo = styled.div`
+    display: none;
+    color: white;
+    text-align: left;
+    font-size: 25px;
+    margin: 0;
+    position: absolute;
+    transform: translateX(185px) translateY(-35px);
+    ${props.active &&
+    `
+    display: flex;
+    align-items: center;
+          `}
+  `;
+
+  const Img = styled.img`
+    height: 25px;
+    width: auto;
+    padding-right: 10px;
+  `;
+
   return (
-    <AppBG>
-      <App></App>
-    </AppBG>
+    <div>
+      <AppBG>
+        <App></App>
+      </AppBG>
+
+      <PSAppInfo>
+        {props.gameType == "ps4" ? (
+          <Img src={ps4Image} />
+        ) : (
+          <Img src={ps5Image} />
+        )}
+        {props.nameGeneric}
+      </PSAppInfo>
+    </div>
   );
 };
 

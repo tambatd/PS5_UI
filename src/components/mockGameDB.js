@@ -1,18 +1,24 @@
 import milesMoralesIcon from "../assets/apps/spiderManMilesMorales/icon.png";
 import milesMoralesLogo from "../assets/apps/spiderManMilesMorales/logo.png";
+import milesMoralesBG from "../assets/apps/spiderManMilesMorales/bg.png";
+
 import ghostsOfTsushimaIcon from "../assets/apps/ghostOfTsushima/icon.png";
 import ghostsOfTsushimaLogo from "../assets/apps/ghostOfTsushima/logo.png";
+import ghostsOfTsushimaBG from "../assets/apps/ghostOfTsushima/bg.png";
+
 import playStationStoreIcon from "../assets/console_UI/PSStore.png";
 import playStationExploreIcon from "../assets/console_UI/PSExplore.png";
 //import NBA2k22Logo from "../assets/apps/nba2k21/logo.png";
 import NBA2k22Icon from "../assets/apps/nba2k21/icon.png";
-
+import Destiny2Icon from "../assets/apps/destiny/icon.png";
 const AppArray = [
   {
     nameGeneric: "PlayStation Store",
     gameType: null,
     gameIcon: playStationStoreIcon,
     gameLogo: null,
+    gameBG: milesMoralesBG,
+
     isGame: false,
     isSelected: false,
   },
@@ -21,29 +27,34 @@ const AppArray = [
     gameType: null,
     gameIcon: playStationExploreIcon,
     gameLogo: null,
+    gameBG: milesMoralesBG,
+
     isGame: false,
     isSelected: true,
   },
   {
     nameGeneric: "Marvel's Spider-Man: Miles Morale",
-    gameType: "PS5",
+    subText: "Be Greater. Be yourself.",
+    gameType: "ps5",
     gameIcon: milesMoralesIcon,
     gameLogo: milesMoralesLogo,
+    gameBG: milesMoralesBG,
     isGame: true,
     isSelected: false,
   },
   {
     nameGeneric: "Ghost's of Tsushima",
-    gameType: "PS4",
+    gameType: "ps4",
     gameIcon: ghostsOfTsushimaIcon,
     gameLogo: ghostsOfTsushimaLogo,
+    gameBG: ghostsOfTsushimaBG,
     isGame: true,
     isSelected: false,
   },
   {
     nameGeneric: "Marvel's Spider-Man: Miles Moral",
     gameType: "PS5",
-    gameIcon: milesMoralesIcon,
+    gameIcon: NBA2k22Icon,
     gameLogo: milesMoralesLogo,
     isGame: true,
     isSelected: false,
@@ -51,7 +62,7 @@ const AppArray = [
   {
     nameGeneric: "Marvel's Spider-Man: Miles Mora",
     gameType: "PS5",
-    gameIcon: milesMoralesIcon,
+    gameIcon: Destiny2Icon,
     gameLogo: milesMoralesLogo,
     isGame: true,
     isSelected: false,

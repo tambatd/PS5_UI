@@ -10,6 +10,8 @@ const PlayStationApps = ({ items }) => {
           key={PlayStationApp.nameGeneric}
           logo={PlayStationApp.gameIcon}
           active={PlayStationApp.isSelected}
+          gameType={PlayStationApp.gameType}
+          nameGeneric={PlayStationApp.nameGeneric}
         />
       ))}
     </AppSelection>
@@ -17,6 +19,7 @@ const PlayStationApps = ({ items }) => {
 };
 
 const AppSelection = styled.div`
+  z-index: 1;
   display: flex;
   width: 1920px;
   padding: 40px;

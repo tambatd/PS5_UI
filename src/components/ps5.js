@@ -1,4 +1,4 @@
-import styled from "styled-components";
+import styled, { keyframes } from "styled-components";
 import { useState, useEffect } from "react";
 import Ps5Header from "../assets/console_UI/Header.png";
 import App from "./app";
@@ -7,6 +7,8 @@ import ghosts from "../assets/apps/ghostOfTsushima/icon.png";
 import { motion } from "framer-motion";
 import AppArray from "./mockGameDB";
 import PlayStationApps from "./gameArray";
+import Background from "./background";
+import Playable from "./playable";
 const PlayStationUserInterface = () => {
   const [currentApp, setCurrentApp] = useState(1);
   const [movement, setMovement] = useState(0);
@@ -30,7 +32,7 @@ const PlayStationUserInterface = () => {
       substract();
       AppArray[currentApp].isSelected = false;
       setMovement(movement + 130);
-    } else if (e.key === "ArrowRight" && currentApp != 10) {
+    } else if (e.key === "ArrowRight" && currentApp != 3) {
       AppArray[currentApp + 1].isSelected = true;
       add();
       AppArray[currentApp].isSelected = false;
@@ -40,18 +42,22 @@ const PlayStationUserInterface = () => {
 
   return (
     <PlayStation5UI onKeyDown={onKeyPressed} tabIndex={0}>
+      <Background AppArray={AppArray} currentApp={currentApp}></Background>
       <Header src={Ps5Header} />
-      <motion.div
-        animate={{
-          x: movement,
-          y: 0,
-          scale: 1,
-          rotate: 0,
-        }}
-        transition={{ duration: 0.25, type: "tween" }}
-      >
-        <PlayStationApps items={AppArray} />
-      </motion.div>
+      <AppSelection>
+        <motion.div
+          animate={{
+            x: movement,
+            y: 0,
+            scale: 1,
+            rotate: 0,
+          }}
+          transition={{ duration: 0.25, type: "tween" }}
+        >
+          <PlayStationApps items={AppArray} />
+        </motion.div>
+      </AppSelection>
+      <Playable AppArray={AppArray} currentApp={currentApp}></Playable>
     </PlayStation5UI>
   );
 };
@@ -67,11 +73,17 @@ const PlayStation5UI = styled.div`
   flex-direction: column;
   justify-content: flex-start;
   align-items: center;
+  z-index: 1;
 `;
 
 const Header = styled.img`
   padding-top: 30px;
   width: 1800px;
+  z-index: 1;
+`;
+
+const AppSelection = styled.div`
+  z-index: 1;
 `;
 
 export default PlayStationUserInterface;
