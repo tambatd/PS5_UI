@@ -1,4 +1,4 @@
-import App from "./app";
+import App from "./playstationApp";
 import styled from "styled-components";
 
 const PlayStationApps = ({ items }) => {

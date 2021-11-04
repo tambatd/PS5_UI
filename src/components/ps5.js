@@ -1,38 +1,32 @@
-import styled, { keyframes } from "styled-components";
-import { useState, useEffect } from "react";
+import styled from "styled-components";
+import { useState } from "react";
 import Ps5Header from "../assets/console_UI/Header.png";
-import App from "./app";
-import spiderManMilesMorales from "../assets/apps/spiderManMilesMorales/icon.png";
-import ghosts from "../assets/apps/ghostOfTsushima/icon.png";
+
 import { motion } from "framer-motion";
 import AppArray from "./mockGameDB";
 import PlayStationApps from "./gameArray";
 import Background from "./background";
 import Playable from "./playable";
 const PlayStationUserInterface = () => {
-  const [currentApp, setCurrentApp] = useState(1);
-  const [movement, setMovement] = useState(0);
+  const [currentApp, setCurrentApp] = useState(2);
+  const [movement, setMovement] = useState(-130);
 
-  useEffect(() => {
-    console.log(currentApp);
-  }, []);
-
-  async function add() {
+  function add() {
     setCurrentApp(currentApp + 1);
     AppArray[currentApp].isSelected = true;
   }
-  async function substract() {
+  function substract() {
     setCurrentApp(currentApp - 1);
     AppArray[currentApp].isSelected = true;
   }
 
   const onKeyPressed = (e) => {
-    if (e.key === "ArrowLeft" && currentApp != 0) {
+    if (e.key === "ArrowLeft" && currentApp !== 2) {
       AppArray[currentApp - 1].isSelected = true;
       substract();
       AppArray[currentApp].isSelected = false;
       setMovement(movement + 130);
-    } else if (e.key === "ArrowRight" && currentApp != 3) {
+    } else if (e.key === "ArrowRight" && currentApp !== 3) {
       AppArray[currentApp + 1].isSelected = true;
       add();
       AppArray[currentApp].isSelected = false;

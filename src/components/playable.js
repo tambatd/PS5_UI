@@ -26,8 +26,8 @@ const PlayableDiv = styled.div`
 `;
 
 const Logo = styled.img`
-  height: 150px;
-  width: 300px;
+  height: 235px;
+  width: auto;
   //width: 100px;
   //transform: translateX(150px);
 `;
@@ -49,8 +49,9 @@ const OverflowButton = styled.img`
 `;
 
 const Subtext = styled.p`
+  max-width: 775px;
   font-size: 30px;
-  color: #f1f1f1;
+  color: #8f8f90;
   margin-top: 45px;
   margin-bottom: 60px;
 `;

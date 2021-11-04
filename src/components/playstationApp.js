@@ -24,6 +24,8 @@ const PlayStationApp = (props) => {
   `;
 
   const App = styled.div`
+    background-color: rgba(0, 0, 0, 0.5) !important;
+    border-radius: 20px;
     height: 115px;
     width: 115px;
     background: url(${props.logo});

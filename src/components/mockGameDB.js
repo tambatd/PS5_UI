@@ -8,9 +8,16 @@ import ghostsOfTsushimaBG from "../assets/apps/ghostOfTsushima/bg.png";
 
 import playStationStoreIcon from "../assets/console_UI/PSStore.png";
 import playStationExploreIcon from "../assets/console_UI/PSExplore.png";
-//import NBA2k22Logo from "../assets/apps/nba2k21/logo.png";
 import NBA2k22Icon from "../assets/apps/nba2k21/icon.png";
+
 import Destiny2Icon from "../assets/apps/destiny/icon.png";
+import PSNowIcon from "../assets/console_UI/PSNow.png";
+import PSLibraryIcon from "../assets/console_UI/library.png";
+
+import PSPlusIcon from "../assets/console_UI/PSPlus.png";
+import GoGIcon from "../assets/apps/GuardiansOfTheGalaxy/icon.png";
+import VanguardIcon from "../assets/apps/CallOfDutyVanguard/icon.png";
+
 const AppArray = [
   {
     nameGeneric: "PlayStation Store",
@@ -18,7 +25,6 @@ const AppArray = [
     gameIcon: playStationStoreIcon,
     gameLogo: null,
     gameBG: milesMoralesBG,
-
     isGame: false,
     isSelected: false,
   },
@@ -27,24 +33,26 @@ const AppArray = [
     gameType: null,
     gameIcon: playStationExploreIcon,
     gameLogo: null,
-    gameBG: milesMoralesBG,
-
     isGame: false,
-    isSelected: true,
+    isSelected: false,
   },
   {
     nameGeneric: "Marvel's Spider-Man: Miles Morale",
-    subText: "Be Greater. Be yourself.",
+    subText:
+      "The worlds of Peter Parker and Spider-Man collide in an original action-packed story",
     gameType: "ps5",
     gameIcon: milesMoralesIcon,
     gameLogo: milesMoralesLogo,
     gameBG: milesMoralesBG,
     isGame: true,
-    isSelected: false,
+    isSelected: true,
   },
   {
     nameGeneric: "Ghost's of Tsushima",
     gameType: "ps4",
+    subText:
+      "Venture beyond the battlefield to experience the ancient beauty of Tsushina",
+
     gameIcon: ghostsOfTsushimaIcon,
     gameLogo: ghostsOfTsushimaLogo,
     gameBG: ghostsOfTsushimaBG,
@@ -52,58 +60,73 @@ const AppArray = [
     isSelected: false,
   },
   {
-    nameGeneric: "Marvel's Spider-Man: Miles Moral",
-    gameType: "PS5",
     gameIcon: NBA2k22Icon,
-    gameLogo: milesMoralesLogo,
+
+    nameGeneric: null,
+    gameType: null,
+
+    gameLogo: null,
+    gameBG: null,
     isGame: true,
     isSelected: false,
   },
   {
-    nameGeneric: "Marvel's Spider-Man: Miles Mora",
-    gameType: "PS5",
     gameIcon: Destiny2Icon,
-    gameLogo: milesMoralesLogo,
+    nameGeneric: null,
+    gameType: null,
+
+    gameLogo: null,
+    gameBG: null,
     isGame: true,
     isSelected: false,
   },
   {
-    nameGeneric: "Marvel's Spider-Man: Miles Mor",
-    gameType: "PS5",
-    gameIcon: milesMoralesIcon,
-    gameLogo: milesMoralesLogo,
+    gameIcon: VanguardIcon,
+    nameGeneric: null,
+    gameType: null,
+
+    gameLogo: null,
+    gameBG: null,
     isGame: true,
     isSelected: false,
   },
   {
-    nameGeneric: "Marvel's Spider-Man: Miles M",
-    gameType: "PS5",
-    gameIcon: milesMoralesIcon,
-    gameLogo: milesMoralesLogo,
+    gameIcon: PSPlusIcon,
+    nameGeneric: null,
+    gameType: null,
+
+    gameLogo: null,
+    gameBG: null,
+    isGame: false,
+    isSelected: false,
+  },
+  {
+    gameIcon: PSNowIcon,
+    nameGeneric: null,
+    gameType: null,
+
+    gameLogo: null,
+    gameBG: null,
+    isGame: false,
+    isSelected: false,
+  },
+  {
+    gameIcon: GoGIcon,
+    nameGeneric: null,
+    gameType: null,
+
+    gameLogo: null,
+    gameBG: null,
     isGame: true,
     isSelected: false,
   },
   {
-    nameGeneric: "Marvel's Spider-Man: Miles Morales",
-    gameType: "PS5",
-    gameIcon: milesMoralesIcon,
-    gameLogo: milesMoralesLogo,
-    isGame: true,
-    isSelected: false,
-  },
-  {
-    nameGeneric: "Marvel's Spider-Man: Miles",
-    gameType: "PS5",
-    gameIcon: milesMoralesIcon,
-    gameLogo: milesMoralesLogo,
-    isGame: true,
-    isSelected: false,
-  },
-  {
-    nameGeneric: "Marvel's Spider-Man: Miles Mo",
-    gameType: "PS5",
-    gameIcon: milesMoralesIcon,
-    gameLogo: milesMoralesLogo,
+    gameIcon: PSLibraryIcon,
+    nameGeneric: null,
+    gameType: null,
+
+    gameLogo: null,
+    gameBG: null,
     isGame: true,
     isSelected: false,
   },
