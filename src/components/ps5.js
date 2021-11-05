@@ -35,7 +35,7 @@ const PlayStationUserInterface = () => {
   };
 
   return (
-    <PlayStation5UI onKeyDown={onKeyPressed} tabIndex={0}>
+    <PlayStation5UI onKeyDown={onKeyPressed} tabIndex="0">
       <Background AppArray={AppArray} currentApp={currentApp}></Background>
       <Header src={Ps5Header} />
       <AppSelection>
