@@ -61,10 +61,10 @@ const AppArray = [
   },
   {
     gameIcon: NBA2k22Icon,
-
-    nameGeneric: null,
-    gameType: null,
-
+    nameGeneric: "NBA2k22",
+    gameType: "ps4",
+    subText:
+      "Play as the Los Angeles Clippers and take on the infamous Los Angeles Lakers",
     gameLogo: null,
     gameBG: null,
     isGame: true,

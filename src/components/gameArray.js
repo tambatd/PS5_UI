@@ -2,12 +2,11 @@ import App from "./playstationApp";
 import styled from "styled-components";
 
 const PlayStationApps = ({ items }) => {
-  console.log(items);
   return (
     <AppSelection>
-      {items.map((PlayStationApp) => (
+      {items.map((PlayStationApp, index) => (
         <App
-          key={PlayStationApp.nameGeneric}
+          key={index}
           logo={PlayStationApp.gameIcon}
           active={PlayStationApp.isSelected}
           gameType={PlayStationApp.gameType}

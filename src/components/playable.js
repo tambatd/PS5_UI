@@ -1,4 +1,4 @@
-import styled from "styled-components";
+import styled, { keyframes } from "styled-components";
 import overlay from "../assets/console_UI/overflow_button.png";
 import play_game from "../assets/console_UI/play_game.png";
 
@@ -15,11 +15,22 @@ const Playable = (props) => {
   );
 };
 
+const FadeInAnimation = keyframes`
+	0% {
+		opacity: 0;
+	}
+	100% {
+		opacity: 1;
+	}
+`;
+
 const PlayableDiv = styled.div`
   display: flex;
   flex-direction: column;
   z-index: 0;
   width: 1700px;
+  animation-name: ${FadeInAnimation};
+  animation-duration: 0.5s;
   align-items: flex-start;
   justify-content: flex-end;
   height: 550px;
@@ -28,8 +39,6 @@ const PlayableDiv = styled.div`
 const Logo = styled.img`
   height: 235px;
   width: auto;
-  //width: 100px;
-  //transform: translateX(150px);
 `;
 
 const Buttons = styled.div`
