@@ -1,16 +1,16 @@
-import App from "./playstationApp";
+import PlayStationApp from "./playstationApp";
 import styled from "styled-components";
 
 const PlayStationApps = ({ items }) => {
   return (
     <AppSelection>
-      {items.map((PlayStationApp, index) => (
-        <App
+      {items.map((App, index) => (
+        <PlayStationApp
           key={index}
-          logo={PlayStationApp.gameIcon}
-          active={PlayStationApp.isSelected}
-          gameType={PlayStationApp.gameType}
-          nameGeneric={PlayStationApp.nameGeneric}
+          logo={App.gameIcon}
+          active={App.isSelected}
+          gameType={App.gameType}
+          nameGeneric={App.nameGeneric}
         />
       ))}
     </AppSelection>
@@ -18,7 +18,6 @@ const PlayStationApps = ({ items }) => {
 };
 
 const AppSelection = styled.div`
-  z-index: 1;
   display: flex;
   width: 1920px;
   padding: 40px;

@@ -1,7 +1,6 @@
 import styled from "styled-components";
 import { useState } from "react";
 import Ps5Header from "../assets/console_UI/Header.png";
-
 import { motion } from "framer-motion";
 import AppArray from "./mockGameDB";
 import PlayStationApps from "./gameArray";
@@ -11,26 +10,24 @@ const PlayStationUserInterface = () => {
   const [currentApp, setCurrentApp] = useState(2);
   const [movement, setMovement] = useState(-130);
 
-  function add() {
+  const add = () => {
+    AppArray[currentApp + 1].isSelected = true;
     setCurrentApp(currentApp + 1);
-    AppArray[currentApp].isSelected = true;
-  }
-  function substract() {
+    setMovement(movement - 130);
+    AppArray[currentApp].isSelected = false;
+  };
+  const substract = () => {
+    AppArray[currentApp - 1].isSelected = true;
     setCurrentApp(currentApp - 1);
-    AppArray[currentApp].isSelected = true;
-  }
+    setMovement(movement + 130);
+    AppArray[currentApp].isSelected = false;
+  };
 
   const onKeyPressed = (e) => {
     if (e.key === "ArrowLeft" && currentApp !== 2) {
-      AppArray[currentApp - 1].isSelected = true;
       substract();
-      AppArray[currentApp].isSelected = false;
-      setMovement(movement + 130);
     } else if (e.key === "ArrowRight" && currentApp !== 3) {
-      AppArray[currentApp + 1].isSelected = true;
       add();
-      AppArray[currentApp].isSelected = false;
-      setMovement(movement - 130);
     }
   };
 
@@ -67,7 +64,6 @@ const PlayStation5UI = styled.div`
   flex-direction: column;
   justify-content: flex-start;
   align-items: center;
-  z-index: 1;
 `;
 
 const Header = styled.img`
@@ -76,8 +72,6 @@ const Header = styled.img`
   z-index: 1;
 `;
 
-const AppSelection = styled.div`
-  z-index: 1;
-`;
+const AppSelection = styled.div``;
 
 export default PlayStationUserInterface;

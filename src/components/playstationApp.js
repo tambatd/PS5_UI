@@ -3,6 +3,24 @@ import styled from "styled-components";
 import ps4Image from "../assets/apps/appType/ps4.png";
 import ps5Image from "../assets/apps/appType/ps5.png";
 
+const PlayStationApp = (props) => {
+  return (
+    <div>
+      <AppBG {...props}>
+        <App {...props}></App>
+      </AppBG>
+
+      <PSAppInfo {...props}>
+        {props.gameType === "ps4" ? (
+          <Img src={ps4Image} />
+        ) : (
+          <Img src={ps5Image} />
+        )}
+        {props.nameGeneric}
+      </PSAppInfo>
+    </div>
+  );
+};
 const AppBG = styled.div`
   height: 120px;
   width: 120px;
@@ -19,7 +37,6 @@ const AppBG = styled.div`
         background: url(${card});
         background-size: 160px 160px;
         transition: all 0.3s ease-out;
-
       `}
 `;
 
@@ -62,24 +79,5 @@ const Img = styled.img`
   width: auto;
   padding-right: 10px;
 `;
-
-const PlayStationApp = (props) => {
-  return (
-    <div>
-      <AppBG {...props}>
-        <App {...props}></App>
-      </AppBG>
-
-      <PSAppInfo {...props}>
-        {props.gameType === "ps4" ? (
-          <Img src={ps4Image} />
-        ) : (
-          <Img src={ps5Image} />
-        )}
-        {props.nameGeneric}
-      </PSAppInfo>
-    </div>
-  );
-};
 
 export default PlayStationApp;

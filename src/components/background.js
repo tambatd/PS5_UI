@@ -21,7 +21,6 @@ const BackgroundImage = styled.img`
   width: 1920px;
   height: 1080px;
   position: absolute;
-  z-index: 0;
   animation-name: ${FadeInAnimation};
   animation-duration: 0.5s;
   animation-iteration-count: initial;
