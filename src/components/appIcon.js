@@ -3,7 +3,7 @@ import styled from "styled-components";
 import ps4Image from "../assets/apps/appType/ps4.png";
 import ps5Image from "../assets/apps/appType/ps5.png";
 
-const PlayStationApp = (props) => {
+const AppIcon = (props) => {
   return (
     <div>
       <AppBG {...props}>
@@ -80,4 +80,4 @@ const Img = styled.img`
   padding-right: 10px;
 `;
 
-export default PlayStationApp;
+export default AppIcon;

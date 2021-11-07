@@ -3,31 +3,25 @@ import { useState } from "react";
 import Ps5Header from "../assets/console_UI/Header.png";
 import { motion } from "framer-motion";
 import AppArray from "./mockGameDB";
-import PlayStationApps from "./gameArray";
+import PlayStationApps from "./playStationApps";
 import Background from "./background";
 import Playable from "./playable";
 const PlayStationUserInterface = () => {
   const [currentApp, setCurrentApp] = useState(2);
   const [movement, setMovement] = useState(-130);
 
-  const add = () => {
-    AppArray[currentApp + 1].isSelected = true;
-    setCurrentApp(currentApp + 1);
-    setMovement(movement - 130);
-    AppArray[currentApp].isSelected = false;
-  };
-  const substract = () => {
-    AppArray[currentApp - 1].isSelected = true;
-    setCurrentApp(currentApp - 1);
-    setMovement(movement + 130);
+  const moveAppBar = (AppMovement) => {
+    AppArray[currentApp + AppMovement].isSelected = true;
+    setCurrentApp(currentApp + AppMovement);
+    setMovement(movement + 130 * -AppMovement);
     AppArray[currentApp].isSelected = false;
   };
 
   const onKeyPressed = (e) => {
     if (e.key === "ArrowLeft" && currentApp !== 2) {
-      substract();
+      moveAppBar(-1);
     } else if (e.key === "ArrowRight" && currentApp !== 3) {
-      add();
+      moveAppBar(1);
     }
   };
 

@@ -1,19 +1,15 @@
 import milesMoralesIcon from "../assets/apps/spiderManMilesMorales/icon.png";
 import milesMoralesLogo from "../assets/apps/spiderManMilesMorales/logo.png";
 import milesMoralesBG from "../assets/apps/spiderManMilesMorales/bg.png";
-
 import ghostsOfTsushimaIcon from "../assets/apps/ghostOfTsushima/icon.png";
 import ghostsOfTsushimaLogo from "../assets/apps/ghostOfTsushima/logo.png";
 import ghostsOfTsushimaBG from "../assets/apps/ghostOfTsushima/bg.png";
-
 import playStationStoreIcon from "../assets/console_UI/PSStore.png";
 import playStationExploreIcon from "../assets/console_UI/PSExplore.png";
 import NBA2k22Icon from "../assets/apps/nba2k21/icon.png";
-
 import Destiny2Icon from "../assets/apps/destiny/icon.png";
 import PSNowIcon from "../assets/console_UI/PSNow.png";
 import PSLibraryIcon from "../assets/console_UI/library.png";
-
 import PSPlusIcon from "../assets/console_UI/PSPlus.png";
 import GoGIcon from "../assets/apps/GuardiansOfTheGalaxy/icon.png";
 import VanguardIcon from "../assets/apps/CallOfDutyVanguard/icon.png";
