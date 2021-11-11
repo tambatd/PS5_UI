@@ -1,11 +1,7 @@
 import styled, { keyframes } from "styled-components";
 
-const Background = (props) => {
-  return (
-    <BackgroundImage
-      src={props.AppArray[props.currentApp].gameBG}
-    ></BackgroundImage>
-  );
+const Background = ({ AppArray, currentApp }) => {
+  return <BackgroundImage src={AppArray[currentApp].gameBG}></BackgroundImage>;
 };
 
 const FadeInAnimation = keyframes`
