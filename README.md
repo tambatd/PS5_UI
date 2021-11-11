@@ -2,7 +2,7 @@
 
 This is an example PlayStation 5 UI built in React
 
-![Alt Text](https://raw.githubusercontent.com/tambatd/PS5_UI/master/public/Ps5UI.gif?token=ANDB7EDHMUNHRDNJEKJ5HB3BRX43A)
+![Alt Text](https://github.com/tambatd/PS5_UI/blob/master/public/Ps5UI.gif?raw=true)
 
 ## Tech Stack
 
