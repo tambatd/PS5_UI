@@ -58,6 +58,9 @@ const PlayStation5UI = styled.div`
   flex-direction: column;
   justify-content: flex-start;
   align-items: center;
+  &:focus {
+    outline: none;
+  }
 `;
 
 const Header = styled.img`
