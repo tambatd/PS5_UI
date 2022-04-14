@@ -1,0 +1,35 @@
+{
+  "files": {
+    "main.css": "/PS5_UI/static/css/main.9bd007f5.chunk.css",
+    "main.js": "/PS5_UI/static/js/main.18a489fb.chunk.js",
+    "main.js.map": "/PS5_UI/static/js/main.18a489fb.chunk.js.map",
+    "runtime-main.js": "/PS5_UI/static/js/runtime-main.86f7114a.js",
+    "runtime-main.js.map": "/PS5_UI/static/js/runtime-main.86f7114a.js.map",
+    "static/js/2.58245afa.chunk.js": "/PS5_UI/static/js/2.58245afa.chunk.js",
+    "static/js/2.58245afa.chunk.js.map": "/PS5_UI/static/js/2.58245afa.chunk.js.map",
+    "index.html": "/PS5_UI/index.html",
+    "static/css/main.9bd007f5.chunk.css.map": "/PS5_UI/static/css/main.9bd007f5.chunk.css.map",
+    "static/js/2.58245afa.chunk.js.LICENSE.txt": "/PS5_UI/static/js/2.58245afa.chunk.js.LICENSE.txt",
+    "static/media/Card.de267e68.png": "/PS5_UI/static/media/Card.de267e68.png",
+    "static/media/Header.627df2f0.png": "/PS5_UI/static/media/Header.627df2f0.png",
+    "static/media/PSStore.ff7a8849.png": "/PS5_UI/static/media/PSStore.ff7a8849.png",
+    "static/media/index.css": "/PS5_UI/static/media/SSTPro-Light.26b431cb.ttf",
+    "static/media/bg.83aa60af.png": "/PS5_UI/static/media/bg.83aa60af.png",
+    "static/media/bg.c17d8cdc.png": "/PS5_UI/static/media/bg.c17d8cdc.png",
+    "static/media/icon.3cd7a043.png": "/PS5_UI/static/media/icon.3cd7a043.png",
+    "static/media/icon.42f57fa1.png": "/PS5_UI/static/media/icon.42f57fa1.png",
+    "static/media/icon.6fe6eacc.png": "/PS5_UI/static/media/icon.6fe6eacc.png",
+    "static/media/icon.7c4b21c4.png": "/PS5_UI/static/media/icon.7c4b21c4.png",
+    "static/media/icon.a898a220.png": "/PS5_UI/static/media/icon.a898a220.png",
+    "static/media/icon.dd44edb3.png": "/PS5_UI/static/media/icon.dd44edb3.png",
+    "static/media/library.b135bb10.png": "/PS5_UI/static/media/library.b135bb10.png",
+    "static/media/logo.7818a025.png": "/PS5_UI/static/media/logo.7818a025.png",
+    "static/media/logo.c8548a40.png": "/PS5_UI/static/media/logo.c8548a40.png"
+  },
+  "entrypoints": [
+    "static/js/runtime-main.86f7114a.js",
+    "static/js/2.58245afa.chunk.js",
+    "static/css/main.9bd007f5.chunk.css",
+    "static/js/main.18a489fb.chunk.js"
+  ]
+}
